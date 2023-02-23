@@ -10,14 +10,22 @@
  
  
  # 트리거  
+ <br/>
+ <br/>
+ <br/>
  
  
  
  # 프로시저  
- 
+ <br/>
+ <br/>
+ <br/>
  
  
  # 안좋은 쿼리란? -> 성능도 물론 중요하지만 - 유지보수  
+ <br/>
+ <br/>
+ <br/>
 
 
  ## cluster index vs nonclustered index
