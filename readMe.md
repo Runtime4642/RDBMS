@@ -110,6 +110,8 @@ WITH 문
 
 
 
+#격리수준  
 
+@Transactional(isolation = Isolation.READ_UNCOMMITTED, propagation = Propagation.REQUIRED, rollbackFor = Exception.class)
 
 
