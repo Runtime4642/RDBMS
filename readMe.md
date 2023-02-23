@@ -7,6 +7,17 @@
  B*Tree vs hash  
  많을 수록 이득인가?  
  적절한 인덱스의 선택
+ 
+ 
+ # 트리거  
+ 
+ 
+ 
+ # 프로시저  
+ 
+ 
+ 
+ # 안좋은 쿼리란? -> 성능도 물론 중요하지만 - 유지보수  
 
 
  ## cluster index vs nonclustered index
@@ -47,9 +58,19 @@
 <br/>
 
 
+# 조인
+LEFT
+RIGHT
+FULL OUTER JOIN
+loop join, sort_merge join, hash join => https://lee-mandu.tistory.com/470
+
+
+https://devuna.tistory.com/36
+
+
 # SQL
 
-## 쿼리 작성규칙
+##
 1. 조인 및 WHERE 조건에는 항상 인덱스가 존재 할 것
 2. 데이터량을 판단하여 쿼리를 작성 할 것
 3. IN 보다는 EXISTS
@@ -59,3 +80,23 @@
 7. 쓰지 않아도 될 Having 주의
 8. 적절한 임시 테이블
 9. ANSI 표준 쿼리 작성(GROUP BY 를 사용하지 않고 집계함수 사용 등.. 금지)   
+
+
+본인만의 모양이 있어야함.
+드라이빙테이블이 왼쪽 드라이븐 테이블을 오른쪽
+
+
+두개의 사각형을 위 아래로 붙인다 => UNION ALL  
+
+두개의 사각형을 옆으로 붙인다 =>  조인  
+
+데이터를 위 아래로 합친다 -> GROUP BY  
+
+가로로 되어 있는 사각형을 세로로 변경한다 -> CASE  
+
+
+
+
+
+
+
