@@ -80,7 +80,11 @@
 비용 기반 옵티마이저는 여러 경로의 비용을 계산해 가장 효율적인 경로를 선택해.
 규칙 기반 옵티마이저는 미리 정해진 규칙을 따르기 때문에 유연성이 떨어져.
 
-
+--힌트--
+SELECT *
+FROM tableA
+JOIN tableB ON tableA.id = tableB.a_id
+FORCE INDEX FOR JOIN (index_name);
 <br/>
 <br/>
 <br/>
